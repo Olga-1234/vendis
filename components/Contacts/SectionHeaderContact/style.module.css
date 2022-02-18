@@ -3,7 +3,7 @@
     /* padding-top: 8%; */
     /* background: wheat; */
     /* padding-left: 5%; */
-    padding-bottom:3% ;
+    padding-bottom: 3%;
 }
 .heightSection1 {
     height: 100vh;
@@ -37,40 +37,38 @@
 
 @media (max-width: 900px) {
     .responsivecard {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    border: solid 2px red;
-    padding: 0% !important;
-    margin: 0 !important;
-    }
-
-}
-@media(max-width: 600px){
-    .responsivetext{
-        padding-top: -50% !important;
-        padding-left: 5%;
-    }
-    .responsivecard{
-    padding: 0% !important;
-    margin: 0 !important;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-
-    }
-}
-@media(max-width: 575px){
-    /* .responsivetext{
-        padding-top: -50% !important;
-        padding-left: 5%;
-    } */
-    .responsiveformulaire{
         display: flex;
         width: 100%;
         flex-direction: column;
         border: solid 2px red;
         padding: 0% !important;
         margin: 0 !important;
-     }
+    }
+}
+@media (max-width: 600px) {
+    .responsivetext {
+        padding-top: -50% !important;
+        padding-left: 5%;
+    }
+    .responsivecard {
+        padding: 0% !important;
+        margin: 0 !important;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    /* .responsivetext{
+        padding-top: -50% !important;
+        padding-left: 5%;
+    } */
+    .responsiveformulaire {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border: solid 2px red;
+        padding: 0% !important;
+        margin: 0 !important;
+    }
 }

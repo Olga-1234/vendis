@@ -22,7 +22,8 @@ const SectionFly = ({ sousServices }) => {
                 <div className="col-sm-2 col-3">
                     <Link href={`/destination`} passHref>
                         <a
-                            className={` d-flex justify-content-center   py-3 h6  fw-bold  ${style.styledbutton}`}>
+                            className={` d-flex justify-content-center   py-3 h6  fw-bold  ${style.styledbutton}`}
+                        >
                             voir plus
                         </a>
                     </Link>

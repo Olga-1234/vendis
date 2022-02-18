@@ -16,7 +16,9 @@ const SectionAboutOurMission = () => {
                 </div>
                 <div className="col-md-7 col-12 d-flex flex-wrap">
                     <div className="d-flex align-items-center justify-content-center col-md-6  col-12">
-                        <div className={` d-flex row align-items-center px-4   border ${style.CardBig}`}>
+                        <div
+                            className={` d-flex row align-items-center px-4   border ${style.CardBig}`}
+                        >
                             <h2 className="fw-bold">But</h2>
                             <p className="">
                                 {' '}
@@ -27,14 +29,18 @@ const SectionAboutOurMission = () => {
                         </div>
                     </div>
                     <div className="col-md-6 col-12 d-flex flex-wrap align-items-center justify-content-center">
-                        <div className={` d-flex row align-items-center px-4 col-md-pt-2  border ${style.Card}`}>
+                        <div
+                            className={` d-flex row align-items-center px-4 col-md-pt-2  border ${style.Card}`}
+                        >
                             <h2 className="fw-bold">Vision</h2>
                             <p>
                                 VenDis Voyage se veut d'être votre Partenaire de premier choix de
                                 Voyage
                             </p>{' '}
                         </div>
-                        <div className={` d-flex row align-items-center px-4 col-md-pt-2  border ${style.Card}`}>
+                        <div
+                            className={` d-flex row align-items-center px-4 col-md-pt-2  border ${style.Card}`}
+                        >
                             <h2 className="fw-bold">Valeurs</h2>
                             <p>Culture des résultats Professionnalisme Loyauté Intégrité</p>
                         </div>

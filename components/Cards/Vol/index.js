@@ -20,11 +20,13 @@ export default function CardVol() {
                 </div>
 
                 <div className="px-3">
-
-                  <div className="py-5 d-flex ">  <h1 className="h4 fw-100 ">kinshasa-goma</h1>
-                    <Link href='/reservation' passHref>
-                        <a className={` ${style.styledbutton} px-2 py-1`}>reserver</a>
-                    </Link></div>
+                    <div className="py-5 d-flex ">
+                        {' '}
+                        <h1 className="h4 fw-100 ">kinshasa-goma</h1>
+                        <Link href="/reservation" passHref>
+                            <a className={` ${style.styledbutton} px-2 py-1`}>reserver</a>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </article>

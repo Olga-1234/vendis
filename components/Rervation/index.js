@@ -44,7 +44,8 @@ const RservationCard = ({ services, entiteId, name, sousService, image }) => {
                         }
 
                         console.log(data);
-                    })}>
+                    })}
+                >
                     <h1 className=" text-left fw-bold">Faite Votre Reservation</h1>
                     <div className="col-12 py-1">
                         <label htmlFor="email" className="form-label py-1 fw-bold">
@@ -163,7 +164,8 @@ const RservationCard = ({ services, entiteId, name, sousService, image }) => {
                                     (service) => service._id === e.target.value
                                 );
                                 setCurrentService(name.name);
-                            }}>
+                            }}
+                        >
                             {services.map((service) => {
                                 return (
                                     <option key={service._id} value={service._id}>
@@ -182,7 +184,8 @@ const RservationCard = ({ services, entiteId, name, sousService, image }) => {
                             name="description"
                             {...register('description')}
                             placeholder={'expliquer nous vos attentes concernant ' + currentService}
-                            className={`"form-label form-control mx-1 ${style.height}`}></textarea>
+                            className={`"form-label form-control mx-1 ${style.height}`}
+                        ></textarea>
                         {errors.description ? (
                             <p className="pt-2">{errors.description.message}</p>
                         ) : (
@@ -191,7 +194,8 @@ const RservationCard = ({ services, entiteId, name, sousService, image }) => {
                     </div>
                     <button
                         type="submit"
-                        className={` py-3 fw-bold my-3 mx-1 rounded ${style.button}`}>
+                        className={` py-3 fw-bold my-3 mx-1 rounded ${style.button}`}
+                    >
                         reservation
                     </button>
                 </form>

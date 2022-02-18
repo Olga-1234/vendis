@@ -28,7 +28,6 @@ const CardAdress = ({ src, pays, capital, adresse }) => {
                             <span className={` ${style.padding}`}>Adresse</span>
                         </div>
 
-            
                         <p className="fw-bold col py-1 px-3">{adresse}</p>
                         <div className=" d-flex px-3">
                             <Image src={phone} height="" width="" alt=" image-phone" />

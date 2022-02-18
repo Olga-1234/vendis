@@ -16,22 +16,29 @@ const ContactCard = () => {
                     {' '}
                     Voyagez <br /> L'Esprit Tranquille
                 </h1>
-          
             </header>
             <section className="container py-4">
-                <article className={` ${style.responsivecard} col-12 row row-cols-2 row-cols-sm-2 justify-content-between row-cols-md-2`}>
-                    <CardAdress src={img} pays="Rdc" capital="Kinshasa" adresse="12, Flamboyant, Kinshasa-Gombe" />
+                <article
+                    className={` ${style.responsivecard} col-12 row row-cols-2 row-cols-sm-2 justify-content-between row-cols-md-2`}
+                >
+                    <CardAdress
+                        src={img}
+                        pays="Rdc"
+                        capital="Kinshasa"
+                        adresse="12, Flamboyant, Kinshasa-Gombe"
+                    />
                     <CardAdress src={img} pays="Rdc" capital="Kinshasa" adresse="12 de la presse" />
                 </article>
             </section>
             <section className="bg-light py-4">
                 <article className="container">
-                    <div className={` ${style.responsiveformulaire} col-12 row row-cols-2 row-cols-sm-2 justify-content-between row-cols-md-2`}>
-                      
-                            <div className={style.responsiveformulaire}>
-                                <Image src={airplane} width="" height="" alt="image-avion" />
-                            </div>
-                        
+                    <div
+                        className={` ${style.responsiveformulaire} col-12 row row-cols-2 row-cols-sm-2 justify-content-between row-cols-md-2`}
+                    >
+                        <div className={style.responsiveformulaire}>
+                            <Image src={airplane} width="" height="" alt="image-avion" />
+                        </div>
+
                         <div className={style.responsiveformulaire}>
                             <form
                                 className="  py-2 d-flex justify-content-center row g-3"
@@ -78,7 +85,9 @@ const ContactCard = () => {
                                 <button
                                     type="submi"
                                     className={`col-3 py-1 fw-bold my-3  ${style.styledbutton}`}
-                                >envoyer</button>
+                                >
+                                    envoyer
+                                </button>
                             </form>
                         </div>
                     </div>

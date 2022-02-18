@@ -6,7 +6,8 @@ import Link from 'next/link';
 const SectionWhoAreWe = ({ resume }) => {
     return (
         <section
-            className={`col-12 d-flex px-sm-0 px-3 py-5 align-items-center justify-content-evenly flex-wrap ${style.dflexResponsive}  ${style.mLR}`}>
+            className={`col-12 d-flex px-sm-0 px-3 py-5 align-items-center justify-content-evenly flex-wrap ${style.dflexResponsive}  ${style.mLR}`}
+        >
             <div className={`col-sm-4  col-12 ${style.pR}  ${style.after}  ${style.borderRadius}`}>
                 <Image src={traveling} width="" height="" alt="" className={`${style.objectFit}`} />
             </div>
@@ -21,7 +22,8 @@ const SectionWhoAreWe = ({ resume }) => {
                     {' '}
                     <Link href={`/aproposdenous`} passHref>
                         <a
-                            className={`mx-1 d-flex justify-content-center  px-3 py-3 h6  fw-bold  ${style.styledbutton}`}>
+                            className={`mx-1 d-flex justify-content-center  px-3 py-3 h6  fw-bold  ${style.styledbutton}`}
+                        >
                             voir plus
                         </a>
                     </Link>
