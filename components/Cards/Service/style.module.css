@@ -1,0 +1,55 @@
+.boxShadow {
+    box-shadow: 0 0 125px rgba(0, 255, 0, 0.055);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative !important;
+}
+
+.boxShadow:hover {
+    /* transform: scale(1.1); */
+    position: relative;
+    z-index: 9999 !important;
+}
+.positionR {
+    position: relative !important;
+    display: block;
+}
+.borderRadius {
+    border-radius: 5%;
+}
+.voirplus {
+    color: green;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+
+    border-radius: 5px;
+}
+.voirplus:hover {
+    color: white;
+    background: #168aaebf;
+}
+.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.after::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.075);
+    border-radius: 2%;
+}
+.p {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 14px !important;
+}

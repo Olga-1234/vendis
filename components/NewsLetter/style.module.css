@@ -1,0 +1,113 @@
+.Container {
+    position: relative;
+}
+.Container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.Hover {
+    position: relative;
+    background: rgba(2, 176, 240, 0.8);
+}
+.HoverText {
+    position: absolute;
+    padding-left: 50%;
+    padding-top: 5%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.Hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: scaleX(3.5);
+    bottom: 0;
+    background: linear-gradient(90deg, transparent 0.5%, rgba(2, 176, 240, 1), rgb(2, 176, 240));
+}
+
+.HoverText h1 {
+    color: white;
+    width: 100%;
+}
+.HoverText button {
+    border-radius: 0px 5px 5px 0;
+    outline: none;
+    font-size: 1.5em;
+    border: 1px transparent solid;
+    color: white;
+    background: #60c864;
+    text-align: center;
+    font-variant: small-caps;
+}
+.HoverText button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: black;
+}
+.HoverText input {
+    padding: 10px 15px;
+    width: calc(80% - 30px);
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    font-size: 1.35em;
+    border: none;
+    text-align: left;
+    font-variant: small-caps;
+}
+@media screen and (max-width: 600px) {
+    .Hover h1 {
+        font-size: 2.75em;
+    }
+    .Container {
+        height: auto;
+    }
+    .HoverText input {
+        font-size: 1.05em;
+        padding: 10px 15px;
+    }
+
+    .HoverText button {
+        padding: 10px 15px;
+    }
+
+    .Hover::after {
+        transform: scaleX(2);
+    }
+    .heightImga::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: scaleX(1.5);
+        bottom: 0;
+        background: linear-gradient(-55deg, transparent, rgba(2, 176, 240, 0.81), rgb(2, 176, 240));
+    }
+    .HoverText {
+        padding-left: 0%;
+        z-index: 2;
+    }
+}
+
+.height {
+    height: 45vh;
+    position: relative;
+}
+.heightImga {
+    position: relative;
+}
+
+.color {
+    color: white !important ;
+}

@@ -1,0 +1,9 @@
+.color {
+    color: rgba(0, 255, 0, 0.481);
+    color: linear-gradient(rgba(0, 255, 0, 0.28), rgba(66, 190, 235, 0.76));
+}
+
+.mLR {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}

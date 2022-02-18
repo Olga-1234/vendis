@@ -1,0 +1,59 @@
+.Container {
+    height: 310px;
+    
+}
+.Image {
+    height: 65%;
+    position: relative;
+}
+.Card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 100%;
+    width: 85%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 0 100px rgba(0, 255, 0, 0.0755);
+}
+.Card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.Card:hover {
+    z-index: 1;
+    transform: scale(1.05) ;
+    box-shadow: 0px 0 100px rgba(82, 82, 82, 0.235);
+}
+
+.Card:hover::after {
+    background-color: rgba(0, 0, 0, 0.125);
+}
+.Card h2 {
+    font-weight: 100;
+    font-size: 1.45em;
+}
+.Card h1 {
+    margin-top: -10px;
+    font-variant: small-caps;
+}
+
+.Header {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+.Prix {
+    background-color: black;
+    color: white;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

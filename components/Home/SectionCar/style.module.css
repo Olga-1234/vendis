@@ -1,0 +1,21 @@
+.btnNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: green;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+    border-radius: 5px;
+    border: none;
+}
+
+.btnNext:hover {
+    border: 1px solid transparent;
+    color: white;
+    background: #168aaebf;
+}
+
+.relative {
+    position: relative;
+}

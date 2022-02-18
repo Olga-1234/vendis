@@ -1,0 +1,29 @@
+.Container {
+    font-size: 1.2em;
+}
+.Image {
+    position: relative;
+    height: 70vh;
+}
+.Card {
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.085);
+}
+.CardBig {
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.085);
+}
+@media (max-width: 600px){
+    .Card{
+        height: 140px !important;
+    }
+    .CardBig{
+        height: 190px !important;
+    }
+}

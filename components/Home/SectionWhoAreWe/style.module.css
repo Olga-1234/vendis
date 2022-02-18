@@ -1,0 +1,105 @@
+.pR {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .Container {
+        height: 19rem;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px !important ;
+        border: rgb(231, 19, 19) solid 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Container {
+        height: 19rem;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px !important ;
+        border: rgb(65, 180, 37) solid 2px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pR {
+        position: relative;
+        width: 70%;
+        height: 40vh;
+    }
+    .dflexResponsive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mLR {
+    height: auto;
+}
+
+.pR::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+}
+
+.index {
+    z-index: 2 !important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(25%, -50%);
+}
+.borderRadius {
+    border-radius: 2%;
+}
+.boxShadow {
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.085);
+}
+.voirplus {
+    border: none;
+    /* background: rgba(66, 190, 235, 0.75); */
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+    color: green !important;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.voirplus:hover {
+    /* background: linear-gradient(45deg, rgba(0, 255, 0, 0.38), rgba(66, 190, 235, 0.76)); */
+    background-color: transparent;
+    background: #168aaebf;
+    color: white !important;
+}
+.objectFit {
+    object-fit: contain !important;
+}
+
+.styledbutton {
+    border: 1px solid transparent;
+    width: auto;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: green;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+}
+.styledbutton:hover {
+    background: transparent;
+
+    color: green !important;
+    border: solid 1px green;
+}

@@ -1,0 +1,6 @@
+.hover {
+    color: #ffffff;
+}
+.hover:hover {
+    color: black;
+}

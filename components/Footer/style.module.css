@@ -1,0 +1,22 @@
+.Container {
+    min-height: 45vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Container i {
+    margin: 0 5px;
+}
+
+.color {
+    color: #4cc765 !important;
+    font-size: 1.5em;
+}
+.pl {
+    padding-right: 10px !important;
+}
+.listeStyle {
+    list-style: none;
+}

@@ -1,0 +1,116 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.image {
+    border-radius: 10px 10px 0 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    border-radius: 10px 10px 0 0;
+}
+.overlay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    height: 100%;
+    transition: 0.35s ease;
+    border-radius: 10px 10px 0 0;
+}
+
+.width:hover .overlay::after {
+    background: transparent;
+}
+.width:hover .text {
+    color: white;
+}
+.text {
+    color: transparent;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.styledbutton {
+    border: 1px solid transparent;
+    width: auto;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: green;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+}
+.styledbutton:hover {
+    background: transparent;
+
+    color: green !important;
+    border: solid 1px green;
+}
+.width {
+    width: 31.5%;
+    height: auto;
+    box-shadow: 0px 0px 100px rgba(0, 255, 0, 0.085);
+    padding: 0 !important;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.width:hover .overlay {
+    height: 100%;
+}
+.width:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .Container {
+        height: 19rem;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px !important ;
+    }
+}
+
+@media (max-width: 768px) {
+    .width {
+        height: 19rem;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px !important ;
+    }
+}
+
+@media (max-width: 600px) {
+    .width {
+        height: 19rem;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px !important ;
+    }
+}

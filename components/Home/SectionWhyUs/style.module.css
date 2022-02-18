@@ -1,0 +1,45 @@
+.bg {
+    background: rgba(0, 255, 0, 0.241);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+.bgYellow {
+    background: rgba(255, 238, 0, 0.241);
+    border-radius: 50%;
+    font-size: 0.25em;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.svg {
+    font-size: 4.5em;
+}
+.bg svg {
+    height: 100%;
+}
+.bgYellow svg {
+    height: 100%;
+}
+
+.colorGreen {
+    border: 1px solid rgba(9, 107, 9, 0.193);
+    border-radius: 5px;
+}
+.paddingTop {
+    padding-bottom: 20px !important;
+}
+.dflexCenter {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+@media (max-width: 600px) {
+    .dflexCenter {
+        justify-content: center !important;
+    }
+    .marginBottom {
+        margin-bottom: 30px !important;
+    }
+}

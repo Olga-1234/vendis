@@ -1,0 +1,53 @@
+.width {
+    min-height: 97vh;
+    /* padding-top: 12%; */
+}
+.width input + p,
+.width textarea + p {
+    color: red;
+    font-variant: small-caps;
+}
+.height {
+    height: 20vh;
+}
+.focus {
+    outline: none !important;
+}
+.focus:focus {
+    border: none !important;
+    outline: none !important;
+}
+.button {
+    background: green;
+    color: white;
+    border: transparent 1px solid;
+}
+.button:hover {
+    background: transparent;
+    color: black;
+    border: green 1px solid;
+}
+.relative {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.relative::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 255, 0.212);
+}
+@media screen and (max-width: 786px) {
+    .width {
+        height: auto;
+        margin-top: 100px;
+    }
+    .relative {
+        height: 40vh;
+    }
+}

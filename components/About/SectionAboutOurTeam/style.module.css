@@ -1,0 +1,138 @@
+.Container {
+    font-size: 1.2em;
+}
+
+.Container * {
+    transition: 0.3s;
+}
+
+.Image {
+    position: relative;
+    height: 70vh;
+}
+
+.Card {
+    height: 280px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.Card:hover {
+    z-index: 9999;
+    transform: scale(1.045);
+}
+
+.ContainerCard {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent 50%, transparent, transparent);
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    color: transparent;
+    padding-top: 50%;
+}
+
+.Hover h1 {
+    width: 100%;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.ContainerRsocial {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+
+.Rsocial {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.38), rgba(66, 190, 235, 0.76));
+}
+
+.ContainerCard .Hover {
+    color: white;
+    opacity: 1;
+    background: linear-gradient(rgba(66, 190, 235, 0.008), rgb(0, 0, 0));
+}
+
+.ContainerCard .ContainerRsocial {
+    color: white;
+    opacity: 1;
+}
+
+.Image {
+    height: 100%;
+    width: 100%;
+}
+
+.positionRelative {
+    position: relative;
+    z-index: 3;
+    /* padding-top: 200px !important ; */
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 0px 0px 100px rgba(0, 255, 0, 0.25); */
+}
+
+.positionRelative::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(8, 14, 16, 0.056), rgba(66, 190, 235, 0.95));
+
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+
+.styledbutton {
+    border: 1px solid transparent;
+    width: auto;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: green;
+    font-size: 1em;
+    font-variant: small-caps;
+    transition: 0.3s;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.118), rgba(66, 190, 235, 0.165));
+}
+
+.styledbutton:hover {
+    background: transparent;
+    color: green !important;
+    border: solid 1px green;
+    transform: scale(1.1);
+}
